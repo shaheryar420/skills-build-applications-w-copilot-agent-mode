@@ -10,7 +10,7 @@ class User(models.Model):
 class Team(models.Model):
     _id = ObjectIdField()
     name = models.CharField(max_length=255)
-    members = models.JSONField()
+    members = models.JSONField(blank=True)
 
 class Activity(models.Model):
     _id = ObjectIdField()
